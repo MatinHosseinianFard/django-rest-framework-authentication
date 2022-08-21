@@ -1,0 +1,17 @@
+{% extends "blog/_base.html" %}
+
+{% block title %}article-list{% endblock title %}
+
+{% block content %}
+
+{% for article in articles %}
+    
+    <article>
+        <h2>title: {{ article.title }}</h2>
+        <div>author : {{ article.author }}</div>
+        <p>body {{ article.body }}</p> <br><br>
+    </article>
+
+    {% endfor %}
+
+{% endblock content %}
