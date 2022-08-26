@@ -22,7 +22,7 @@ schema_view = get_schema_view(
 from dj_rest_auth.views import PasswordResetConfirmView
 
 urlpatterns = [
-    path("", include("blog.urls")),
+    # path("", include("blog.urls")),
     path("api/", include("api.urls")),
     path("admin/", admin.site.urls),
     path('api/dj-rest-auth/', include('dj_rest_auth.urls')),

@@ -146,6 +146,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
         "dj_rest_auth.jwt_auth.JWTCookieAuthentication",
+        "rest_framework.authentication.BasicAuthentication",
     ]
 }
 
@@ -161,7 +162,8 @@ JWT_AUTH_REFRESH_COOKIE = 'refresh'
 from datetime import timedelta
 
 SIMPLE_JWT = {
-'ACCESS_TOKEN_LIFETIME': timedelta(seconds=30),
+'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
+'REFRESH_TOKEN_LIFETIME': timedelta(hours=1),
 }
 
 CORS_ALLOWED_ORIGINS = [

@@ -15,6 +15,7 @@ class ArticleDetail(RetrieveUpdateDestroyAPIView):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
     permission_classes = (IsStaffOrReadOnly, IsAuthorOrReadOnly)
+    lookup_field = "slug"
 
 
 class UserList(ListCreateAPIView):
