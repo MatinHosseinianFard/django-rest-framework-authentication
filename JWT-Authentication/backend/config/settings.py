@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "allauth.socialaccount",
     "dj_rest_auth.registration",
     "corsheaders",
+    "drf_yasg",
 
     # Local
     "blog.apps.BlogConfig",
@@ -156,6 +157,12 @@ REST_USE_JWT = True
 
 JWT_AUTH_COOKIE = 'access'
 JWT_AUTH_REFRESH_COOKIE = 'refresh'
+
+from datetime import timedelta
+
+SIMPLE_JWT = {
+'ACCESS_TOKEN_LIFETIME': timedelta(seconds=30),
+}
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
