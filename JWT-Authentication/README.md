@@ -2,7 +2,7 @@
 
 ### Back-End server:
 
-And then, open the command prompt in the location where the JWT-Authentication folder is located and navigate to the following folder with the following command : 
+Open the command prompt in the location where the JWT-Authentication folder is located and navigate to the following folder with the following command: 
 
 ```
 > cd JWT-Authentication\backend 
@@ -27,10 +27,10 @@ Then run the django server with the following command:
 > python manage.py runserver
 ```
 > **Note**
-> Do not close the terminal after this step and let the server run
+> Do not close the terminal after this step and let the server run.
 
 ### Front-End server:
-Now it's time to run the front server
+Now it's time to run the front server.
 
 Open a new command prompt in the location where the JWT-Authentication folder is located and navigate to the following folder with the following command:
 
