@@ -1,5 +1,10 @@
 ### First, make sure that [python3.10](https://www.python.org/) and [node.js 16](https://nodejs.org/en/) are installed on your system.
 
+Then, clone this repository:
+```
+> git clone https://github.com/matinhosseinian/django-rest-framework-authentication.git
+```
+
 ### Back-End server:
 
 Open the command prompt in the location where the Djoser-Authentication folder is located and navigate to the following folder with the following command: 
